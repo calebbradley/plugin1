@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Boilerplate</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="../src/jquery.boilerplate.js"></script>
+	</head>
+	<body>
+	<div id="element" style="background: lightgrey">What should this do??</div>
+	<script type="text/javascript">
+		(function( $ ){
+
+  	$.fn.tooltip = function( options ) {  
+
+    // Create some defaults, extending them with any options that were provided
+    var settings = $.extend( {
+      'location'         : 'top',
+      'background-color' : 'blue'
+    }, options);
+
+    return this.each(function() {        
+
+      // Tooltip plugin code here
+
+    	});
+
+  	};
+	})( jQuery );
+	</script>
+		<script>
+			$(function() {
+				$("#element").defaultPluginName({
+					propertyName: "value"
+				});
+			});
+		</script>
+	</body>
+</html>
